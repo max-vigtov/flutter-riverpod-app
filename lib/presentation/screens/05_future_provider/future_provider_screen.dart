@@ -14,7 +14,7 @@ class FutureProviderScreen extends ConsumerWidget {
       appBar: AppBar(
         title: const Text('Future Provider'),
       ),
-      body:  Center(
+      body: Center(
         child: pokemonAsync.when(
           data: ( name ) => Text( name ), 
           error: ( _, __ ) => const Text( 'No se pudo cargar el nombre' ), 

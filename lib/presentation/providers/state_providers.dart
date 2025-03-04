@@ -6,7 +6,7 @@ final counterProvider = StateProvider<int>((ref) {
 });
 
 final isDarkModeProvider = StateProvider<bool>((ref) {
-  return false;
+  return true;
 });
 
 final randomNameProvider = StateProvider<String>((ref) {

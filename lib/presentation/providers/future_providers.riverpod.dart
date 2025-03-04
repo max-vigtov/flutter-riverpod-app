@@ -12,3 +12,9 @@ final pokemonNameProvider = FutureProvider<String>((ref) async {
 final pokemonIdProvider = StateProvider<int>((ref) {
   return 1;
 });
+
+final pokemonProvider = FutureProvider.family<String, int>((ref, pokemonId) async {
+  final pokemonName = await PokemonInformation.getPokemonName( pokemonId );
+
+  return pokemonName;
+});

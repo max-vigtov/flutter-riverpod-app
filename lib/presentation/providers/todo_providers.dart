@@ -34,5 +34,6 @@ final filteredTodosProvider = Provider<List<Todo>>((ref) {
       return todos.where((todo) => todo.done).toList();
     
     case TodoFilter.pending:
-      return todos.where((todo) => !todo.done).toList();  }
+      return todos.where((todo) => !todo.done).toList();  
+  }
 });
